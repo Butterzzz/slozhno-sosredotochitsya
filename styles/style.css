@@ -3,7 +3,7 @@
 .page {
   font-family: var(--main-font, monospace);
   background-color: var(--bg-color, #000028);
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,7 +11,8 @@
 }
 
 .title-decor {
-  background-color: var(--accent-color);
+  color: var(--title-color);
+  background-color: var(--decor-color);
 }
 
 .link {
@@ -78,7 +79,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--hover-line);
+  outline: 1px solid var(--hover-border);
 }
 
 .header__theme-menu-button:focus {
@@ -95,15 +96,14 @@
 }
 
 .header__title {
-  color: var(--title-color, #db00ff);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--main-title-color, #db00ff);
+  text-shadow: 4px 4px 0 var(--main-title-shadow);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
 }
 
 .header__subtitle {
-  color: var(--bg-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 130%;
@@ -155,7 +155,7 @@
 }
 
 .section__descrition {
-  color: var(--bg-color, #000028);
+  color: var(--title-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 130%;
@@ -169,7 +169,6 @@
 }
 
 .card__title {
-  color: var(--bg-color, #000028);
   font-size: 18px;
   line-height: 130%;
 }
@@ -182,7 +181,7 @@
 }
 
 .card__link {
-  text-shadow: 2px 1px 0 var(--accent-color);
+  text-shadow: 2px 1px 0 var(--decor-color);
 }
 
 .card__link:hover {
@@ -203,7 +202,7 @@
 }
 
 .gallery__title {
-  color: var(--bg-color, #000028);
+  color: var(--title-color, #000028);
   font-size: 18px;
   font-weight: 700;
   line-height: 130%;
@@ -230,8 +229,8 @@
 }
 
 .footer__title {
-  color: var(--title-color, #db00ff);
-  text-shadow: 2px 2px 0 var(--accent-color);
+  color: var(--main-title-color, #db00ff);
+  text-shadow: 2px 2px 0 var(--main-title-shadow);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
